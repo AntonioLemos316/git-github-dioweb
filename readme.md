@@ -56,16 +56,34 @@
 ## Primeiros passos git e github
 
 - Existem duas formas de obter um repositório git na máquina local
-- Transformar um diretório local que não está sob controle de versão, num repositório Git // git init
+- Transformar um diretório local que não está sob controle de versão, num repositório Git com git init
 
 <img src="./img/git-github001.PNG">
 
-- cd .git // acessar na pasta o caminho .git que é oculto, esse arquivo é responsavel por gerenciar nosso controle de versão
+- Utilizando cd .git para acessar na pasta o caminho .git que é oculto, esse arquivo é responsavel por gerenciar nosso controle de versão
 
 <img src="./img/git-github002.PNG">
 
-- utilizando o ls para ver os arquivos em .git
+- Utilizando o ls para ver os arquivos em .git
 
 <img src="./img/git-github003.PNG">
 
-- Clonando um repositório Git existente
+- Clonando um repositório Git existente com git clone
+
+<img src="./img/git-github004.PNG">
+
+- Verificando com o ls a pasta que foi clonada
+
+<img src="./img/git-github005.PNG">
+
+- Podemos clonar o repositório com outro nome
+
+<img src="./img/git-github006.PNG">
+
+- Criando um repositório local e adicionando o git init e observando com cat config que ele não está associado a nenhum repositório online
+
+<img src="./img/git-github007.PNG">
+
+- Após utilizar o comando git remote add origin e a url do repositorio que queremos associar o local conseguimos ver que foi associado atraves de cat config
+
+<img src="./img/git-github008.PNG">
