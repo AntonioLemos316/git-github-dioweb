@@ -201,3 +201,51 @@
 <img src="./img/git-github035.PNG">
 
 <img src="./img/git-github036.PNG">
+
+- Com o git pull trazemos as alterações do repositório remoto e mesclamos com o repositório local
+
+<img src="./img/git-github037.PNG">
+
+## Trabalhando com Branches - criando, mesclando, deletando e tratando conflitos
+
+- Uma branch é uma ramificação do projeto
+- É um ponteiro móvel para um commit no histórico do repositório
+- Quando criamos nova Branch a partir de outra existente, a nova Branch se inicia apontando para o mesmo commit da Branch que estava quando foi criada
+- Criar várias Branch é fundamental ao se trabalhar em conjunto para não misturar alterações feitas numa mesma parte do código
+- O (HEAD -> main) aponta em qual commit esta a branch
+
+<img src="./img/git-github038.PNG">
+
+- Criação da Branch teste com git checkout -b teste, as duas estão apontando para o mesmo commit
+
+<img src="./img/git-github039.PNG">
+
+- Ao criar um novo commit dentro da Branch teste, ela apontará para o novo commit
+
+<img src="./img/git-github040.PNG">
+
+- A Branch nova funciona de forma independente
+
+<img src="./img/git-github041.PNG">
+
+<img src="./img/git-github042.PNG">
+
+<img src="./img/git-github043.PNG">
+
+<img src="./img/git-github044.PNG">
+
+- Com o git branch -v conseguimos ver a branch e qual é o seu commit
+
+<img src="./img/git-github045.PNG">
+
+- Estando na Branch main, com o git merge e o nome da Branch que queremos mesclar, pegaremos as alterações feitas na outra Branch e adicionaremos a nossa Branch main
+
+<img src="./img/git-github046.PNG">
+
+- Com o git branch conseguimos ver as branch's disponíveis e com git branch -d e o nome da branch conseguimos deletar a branch indicada
+
+<img src="./img/git-github047.PNG">
+
+## Considerações
+
+- Agredicimento a [DioWeb](https://web.dio.me/) e a professora Elidiana.
