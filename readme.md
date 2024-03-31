@@ -53,7 +53,7 @@
 - git config credential.helper cache // temporario > mais de uma pessoa
 - git config credential.helper store // permanente > uso pessoal
 
-## Primeiros passos git e github
+## Primeiros passos git e github criando e clonando repositórios
 
 - Existem duas formas de obter um repositório git na máquina local
 - Transformar um diretório local que não está sob controle de versão, num repositório Git com git init
@@ -84,6 +84,78 @@
 
 <img src="./img/git-github007.PNG">
 
-- Após utilizar o comando git remote add origin e a url do repositorio que queremos associar o local conseguimos ver que foi associado atraves de cat config
+- Após utilizar o comando git remote add origin com a url do repositório online que queremos associar no repositório local, conseguimos ver que ele foi associado atraves de cat config
 
 <img src="./img/git-github008.PNG">
+
+## Salvando alterações locais
+
+- Breve resumo do que foi estudo até agora
+
+<img src="./img/git-github009.PNG">
+
+- Com o git status observamos como esta o estado atual do repositório
+
+<img src="./img/git-github010.PNG">
+
+- Com o touch README.md criamos um arquivo na pasta e ao rodar o git status novamente ele mostra o estado atual e a alteração que foi feita e também mostra um sugestão do que pode ser feito
+
+<img src="./img/git-github011.PNG">
+
+- Com o git add e o nome do arquivo especificamos qual arquivo vamos colocar na staging area para ser incluído no próximo commit
+
+<img src="./img/git-github012.PNG">
+
+- Com o git commit -m"mensagem" criamos um novo commit no repositório git com uma mensagem associada ao commit
+
+<img src="./img/git-github013.PNG">
+
+- Com o git log podemos ver os históricos de commit em um repositório git
+
+<img src="./img/git-github014.PNG">
+
+- Com o git status observamos que não à nenhuma alteração a ser feita
+
+<img src="./img/git-github015.PNG">
+
+- Ao utilizar o mkdir e criar uma pasta vazia e rodar o git status ele não reconhece a pasta vazia como uma alteração
+
+<img src="./img/git-github016.PNG">
+
+- Ao utilizar o touch indicando a pasta criada anteriormente, criaremos um arquivo nela, em seguida rodaremos o git status e agora ele consegue ver a pasta
+
+<img src="./img/git-github017.PNG">
+
+- Com o comando echo o caminho da pasta > .gitignore estamos criando um arquivo .gitignore que dentro dele tera escrito o caminho da pasta
+
+<img src="./img/git-github018.PNG">
+
+- Com o git status podemos ver que o arquivo .gitignore foi listado com untracked e a pasta praticando-git-e-github foi ignorada
+
+<img src="./img/git-github019.PNG">
+
+- Ao utilizar echo > .gitignore, criamos um novo arquivo .gitignore vazio, ao roda o git status ele volta a ver a pasta que antes estava ignorada
+
+<img src="./img/git-github020.PNG">
+
+- Geralmente ao criar uma nova pasta existe uma convenção que é criar dentro dela um arquivo chamado .gitkeep para a pasta não ficar vazia
+
+<img src="./img/git-github021.PNG">
+
+- Com o git status e utilizando a convenção a pasta sera reconhecida mesmo estando "vazia"
+
+<img src="./img/git-github022.PNG">
+
+- Com o git add . estamos indicando que vamos adicionar todos os arquivos para a area de staging
+
+<img src="./img/git-github023.PNG">
+
+- Utilizando o git commit -m"mensagem" fizemos o nosso commit para o repositório do git
+
+<img src="./img/git-github024.PNG">
+
+- Com o git log observamos nosso histórico de commits
+
+<img src="./img/git-github025.PNG">
+
+## 
