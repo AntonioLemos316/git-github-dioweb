@@ -158,4 +158,46 @@
 
 <img src="./img/git-github025.PNG">
 
-## 
+## Desfazendo alterações no repositório local
+
+- Utilizando o rm -rf .git para remover a força o diretório git
+
+<img src="./img/git-github026.PNG">
+
+- Com o git status vemos que o repositório não é mais um repositório git
+
+<img src="./img/git-github027.PNG">
+
+- Com o git restore e indicando o nome do arquivo, conseguimos voltar ao último estado do commit caso tenha feito alguma alteração, como apagar o conteúdo do arquivo. Obs: tomar cuidado ao utilizar esse comando
+
+<img src="./img/git-github028.PNG">
+
+- Com o git commit --amend -m "mens" alteramos a mensagem do nosso ultimo commit
+
+<img src="./img/git-github029.PNG">
+
+- Com o git reset --soft e o hash do commit, nós voltamos o commit anterior para a area de staging novamente
+
+<img src="./img/git-github030.PNG">
+
+- Com o git reset --mixed e o hash do commit, voltamos a area de trabalho antes da area de staging
+
+<img src="./img/git-github031.PNG">
+
+- Com o git reset --hard e o hash do commit, apagamos tudo e voltamos até o ultimo commit. Obs: muito cuidado ao usar esse comando
+
+<img src="./img/git-github032.PNG">
+
+- Utilizando o git reflog para ter um histórico mais detalhado do repositório local e todas essas alterações deve ser feitas antes de serem enviadas ao repositório remoto
+
+<img src="./img/git-github033.PNG">
+
+## Enviando e baixando alterações com o repositório remoto
+
+- Pegando as alterações locais e colocando no repositório remoto
+
+<img src="./img/git-github034.PNG">
+
+<img src="./img/git-github035.PNG">
+
+<img src="./img/git-github036.PNG">
